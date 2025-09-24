@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="uk" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="language" content="Ukrainian">
+    <meta name="content-language" content="uk">
+    
+    <!-- SEO Meta Tags -->
+    <title>Навчання Трейдингу - Безкоштовний Курс | ТрейдКлаб</title>
+    <meta name="description" content="Освойте трейдинг з нуля! Безкоштовне навчання торгівлі на валютних парах. Від 1 години в день. Лише телефон і інтернет. Приєднуйтесь до найбільшого ком'юніті трейдерів України.">
+    <meta name="keywords" content="трейдинг, навчання трейдингу, курси трейдингу, валютні пари, безкоштовне навчання, заробіток, фінанси, інвестиції">
+    <meta name="author" content="ТОВ ТрейдКлаб">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Навчання Трейдингу - Безкоштовний Курс | ТрейдКлаб">
+    <meta property="og:description" content="Освойте трейдинг з нуля! Безкоштовне навчання торгівлі на валютних парах. Приєднуйтесь до найбільшого ком'юніті трейдерів України.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://your-domain.vercel.app">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1650959828226-f9d53a7c1f64?w=1200&h=630&fit=crop&crop=center">
+    <meta property="og:site_name" content="ТрейдКлаб">
+    <meta property="og:locale" content="uk_UA">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Навчання Трейдингу - Безкоштовний Курс">
+    <meta name="twitter:description" content="Освойте трейдинг з нуля! Безкоштовне навчання торгівлі на валютних парах.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1650959828226-f9d53a7c1f64?w=1200&h=630&fit=crop&crop=center">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💰</text></svg>">
+    
+    <!-- Preconnect to external domains for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Ukrainian Language Support -->
+    <style>
+        * {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif, 'Segoe UI Emoji', 'Noto Color Emoji' !important;
+            font-feature-settings: "kern" 1, "liga" 1, "calt" 1 !important;
+            text-rendering: optimizeLegibility !important;
+            -webkit-font-smoothing: antialiased !important;
+            -moz-osx-font-smoothing: grayscale !important;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            unicode-bidi: bidi-override !important;
+            direction: ltr !important;
+            min-height: 100vh;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        
+        :lang(uk), [lang="uk"] {
+            unicode-bidi: bidi-override !important;
+            direction: ltr !important;
+        }
+        
+        /* Loading spinner */
+        #loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 3px solid #333;
+            border-radius: 50%;
+            border-top-color: #10b981;
+            animation: spin 1s ease-in-out infinite;
+        }
+        
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+        
+        .loading-text {
+            margin-top: 20px;
+            color: #10b981;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        
+        /* Hide app until loaded */
+        #root {
+            opacity: 0;
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        #root.loaded {
+            opacity: 1;
+        }
+    </style>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "ТрейдКлаб",
+        "description": "Навчання трейдингу з нуля. Безкоштовні курси торгівлі на валютних парах.",
+        "url": "https://your-domain.vercel.app",
+        "logo": "https://images.unsplash.com/photo-1649503116494-b07b8f561c21?w=200&h=200&fit=crop&crop=center",
+        "sameAs": [
+            "https://t.me/your_bot_username"
+        ],
+        "address": {
+            "@type": "PostalAddress",
+            "addressCountry": "UA",
+            "addressLocality": "Київ"
+        },
+        "contactPoint": {
+            "@type": "ContactPoint",
+            "contactType": "customer support",
+            "email": "support@tradeclub.ua"
+        }
+    }
+    </script>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading">
+        <div>
+            <div class="spinner"></div>
+            <div class="loading-text">Завантаження...</div>
+        </div>
+    </div>
+    
+    <!-- App Container -->
+    <div id="root"></div>
+    
+    <!-- React and App Script -->
+    <script type="module">
+        import React from 'https://esm.sh/react@18';
+        import ReactDOM from 'https://esm.sh/react-dom@18/client';
+        import App from './App.tsx';
+        
+        // Hide loading screen and show app
+        const hideLoading = () => {
+            const loading = document.getElementById('loading');
+            const root = document.getElementById('root');
+            
+            if (loading) loading.style.display = 'none';
+            if (root) root.classList.add('loaded');
+        };
+        
+        // Create React root and render app
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        
+        try {
+            root.render(React.createElement(App));
+            
+            // Hide loading after a short delay to ensure everything is loaded
+            setTimeout(hideLoading, 500);
+        } catch (error) {
+            console.error('Failed to render app:', error);
+            
+            // Show error message
+            document.getElementById('root').innerHTML = `
+                <div style="
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    min-height: 100vh;
+                    background: linear-gradient(135deg, #000000 0%, #1a1a1a 100%);
+                    color: #ffffff;
+                    font-family: 'Inter', sans-serif;
+                    text-align: center;
+                    padding: 20px;
+                ">
+                    <div>
+                        <h1 style="color: #ef4444; margin-bottom: 20px;">Помилка завантаження</h1>
+                        <p>Будь ласка, перезавантажте сторінку</p>
+                        <button 
+                            onclick="window.location.reload()" 
+                            style="
+                                margin-top: 20px;
+                                padding: 12px 24px;
+                                background: linear-gradient(135deg, #10b981, #f59e0b);
+                                color: white;
+                                border: none;
+                                border-radius: 8px;
+                                cursor: pointer;
+                                font-size: 16px;
+                            "
+                        >
+                            Перезавантажити
+                        </button>
+                    </div>
+                </div>
+            `;
+            hideLoading();
+        }
+    </script>
+    
+    <!-- Analytics placeholder - replace with your analytics code -->
+    <!-- Google Analytics, Facebook Pixel, etc. -->
+    
+    <!-- Error tracking -->
+    <script>
+        window.addEventListener('error', function(e) {
+            console.error('Global error:', e.error);
+        });
+        
+        window.addEventListener('unhandledrejection', function(e) {
+            console.error('Unhandled promise rejection:', e.reason);
+        });
+    </script>
+</body>
+</html>

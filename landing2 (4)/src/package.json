@@ -1,0 +1,41 @@
+{
+  "name": "trading-landing-ukraine",
+  "version": "1.0.0",
+  "description": "Landing page for trading education in Ukraine with emerald-gold design",
+  "main": "App.tsx",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "start": "vite preview --port $PORT"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "lucide-react": "^0.344.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.0",
+    "tailwindcss": "^4.0.0-alpha.25",
+    "@tailwindcss/vite": "^4.0.0-alpha.0"
+  },
+  "keywords": [
+    "trading",
+    "education",
+    "ukraine",
+    "landing-page",
+    "react",
+    "tailwindcss",
+    "vercel"
+  ],
+  "author": "TradeClub Ukraine",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  }
+}
